@@ -24,9 +24,9 @@ const config = {
 
 const SECRET = process.env.JWT_SECRET;
 
-// ... your register
 
-// ✅ Register API
+
+// Register API
 app.post('/register', async (req, res) => {
     const { name, email, password } = req.body;
 
@@ -46,7 +46,7 @@ app.post('/register', async (req, res) => {
     }
 });
 
-// ✅ Login API
+// Login API
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;
 
@@ -74,5 +74,5 @@ app.post('/login', async (req, res) => {
     }
 });
 
-// 🚀 Run server
-app.listen(3000, () => console.log('✅ Server running on port 3000'));
+//run server
+app.listen(3000, () => console.log('Server running on port 3000'));
