@@ -7,7 +7,7 @@ function App() {
   const token = localStorage.getItem('token')
 
   return (
-    <Router>
+    <Router basename="/Auth">
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
